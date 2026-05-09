@@ -10,6 +10,13 @@
   overflow: hidden;
 }
 
+.smallBanner {
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
