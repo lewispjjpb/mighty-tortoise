@@ -26,29 +26,34 @@ export type LineData = {
   type: 'scatter',
   mode: "lines+markers",
   marker: {color: string},
+  name: string
 }
 
 /**
  * This function takes the raw json data from the CDC and converts it
  * into the format that the line chart expects.
  */
-export const convertRawJsonToLineChartData = (rawJson: CdcResponseDataType[]):LineData => {
-  const lineData: LineData = {
-    x: [],
-    y: [],
-    type: 'scatter',
-    mode: 'lines+markers',
-    marker: {color: 'red'},
-  }
+export const convertRawJsonToLineChartData = (rawJson: CdcResponseDataType[]):LineData[] => {
+  const allLineData: {[name:string]: LineData} = {};
 
   for (const dataPoint of rawJson) {
+    if (!allLineData[dataPoint.counties_served]) {
+      allLineData[dataPoint.counties_served] = {
+        name: dataPoint.counties_served,
+        x: [],
+        y: [],
+        type: 'scatter',
+        mode: "lines+markers",
+        marker: {color: 'black'},
+      };
+    }
     const x = (dataPoint.sample_collect_date);
     const y = parseFloat(dataPoint.pcr_target_avg_conc);
-    lineData.x.push(x);
-    lineData.y.push(y);
+    allLineData[dataPoint.counties_served].x.push(x);
+    allLineData[dataPoint.counties_served].y.push(y);
   }
 
-  return lineData;
+  return Object.values(allLineData);
 }
 
 

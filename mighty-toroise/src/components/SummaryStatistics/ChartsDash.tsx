@@ -7,6 +7,7 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { STATE_MAP} from "@site/src/utils/app-constants";
 import {SampleDataLineChart} from "@site/src/components/SummaryStatistics/SampleDataLineChart";
+import {AppErrorBoundary} from "@site/src/components/shared/ErrorBoundary";
 
 
 export const ChartsDash = () => {
@@ -19,7 +20,8 @@ export const ChartsDash = () => {
     request.getData().then((data) => {
       console.log('setting')
       setData(data)
-    });
+    })
+      .catch((err) => console.log('err: ', err));
   },[selectedState])
 
   const StateSelect = ():JSX.Element => {
@@ -50,7 +52,9 @@ export const ChartsDash = () => {
     <Box component="section" sx={{ p: 2, border: '1px dashed grey' }}>
       <StateSelect />
       ChartsDash
-      <SampleDataLineChart rawResponseData={data} />
+      <AppErrorBoundary>
+        <SampleDataLineChart rawResponseData={data} />
+      </AppErrorBoundary>
     </Box>
   )
 }
