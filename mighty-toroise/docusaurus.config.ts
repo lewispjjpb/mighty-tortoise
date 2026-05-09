@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Influenza A Wastewater Sampling',
   tagline: 'One Resource.  All Answers.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/lab-svgrepo-com.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -85,14 +85,14 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
         { to: '/blog', label: 'Blog', position: 'left' },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {
+        //   href: 'https://github.com/facebook/docusaurus',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {

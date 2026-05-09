@@ -27,6 +27,7 @@ let layout: Partial<Layout> = {
       text: 'y Axis',
     },
   },
+  autosize: true,
 };
 
 export const SampleDataScatterChart = ({

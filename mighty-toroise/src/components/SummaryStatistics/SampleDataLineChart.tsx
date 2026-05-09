@@ -17,6 +17,7 @@ const layout: Partial<Layout> = {
   legend: {
     orientation: 'h',
   },
+  autosize: true,
 };
 export const SampleDataLineChart = ({
   rawResponseData,

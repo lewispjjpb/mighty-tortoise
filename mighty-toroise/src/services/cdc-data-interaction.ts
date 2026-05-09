@@ -9,7 +9,7 @@
  */
 const cdcBaseUrl = 'https://data.cdc.gov/resource';
 const resourceId = 'ymmh-divb';
-const limit = 15;
+const limit = 20;
 
 export const constructCdcUrlString = (state: string) => {
   const now = new Date();
@@ -27,6 +27,7 @@ export type LineData = {
   type: 'scatter';
   mode: 'lines+markers';
   name: string;
+  line: {shape: 'spline', smoothing: number};
 };
 
 /**
@@ -46,6 +47,7 @@ export const convertRawJsonToLineChartData = (
         y: [],
         type: 'scatter',
         mode: 'lines+markers',
+        line: {shape: 'spline', smoothing: .8}
       };
     }
     const x = dataPoint.sample_collect_date;
