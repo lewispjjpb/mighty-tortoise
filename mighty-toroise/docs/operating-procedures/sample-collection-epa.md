@@ -3,19 +3,6 @@
 
 ---
 
-## Revision History
-
-> **Note:** The top row of this table shows the most recent changes to this controlled document. For previous revision history information, archived versions of this document are maintained by the SESD Document Control Coordinator on the SESD local area network (LAN).
-
-| Revision | Effective Date | Changes |
-|----------|----------------|---------|
-| SESDPROC-306-R3 | February 28, 2013 | **General:** Corrected any typographical, grammatical and/or editorial errors.<br><br>**Title Page:** Changed author from Liza Montalvo to Bill Simpson. Changed Enforcement and Investigations Branch Chief from Archie Lee to Danny France. Changed Field Quality Manager from Liza Montalvo to Bobby Lewis.<br><br>**Revision History:** Changes were made to reflect the current practice of only including the most recent changes in the revision history.<br><br>**Section 1.2:** Added the following statement: Mention of trade names or commercial products does not constitute endorsement or recommendation for use.<br><br>**Section 2.2:** Item 5 was revised to reflect practice of using individual single-use preservative vials instead of preservatives prepared by ASB. |
-| SESDPROC-306-R2 | February 19, 2010 | Wastewater Sampling, replaces SESDPROC-306-R |
-| SESDPROC-306-R1 | November 1, 2007 | Wastewater Sampling, replaces SESDPROC-306-R |
-| SESDPROC-306-R0 | February 05, 2007 | Wastewater Sampling, Original Issue |
-
----
-
 ## Table of Contents
 
 1. **[General Information](#1-general-information)**
