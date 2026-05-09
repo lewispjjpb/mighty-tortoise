@@ -1,5 +1,5 @@
 import { useState, useEffect, JSX } from 'react';
-import { constructCdcUrlString} from "@site/src/utils/cdc-data-interaction";
+import { constructCdcUrlString} from "@site/src/services/cdc-data-interaction";
 import {FetchService} from "@site/src/services/fetch-service";import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -7,8 +7,9 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { STATE_MAP} from "@site/src/utils/app-constants";
 import {SampleDataLineChart} from "@site/src/components/SummaryStatistics/SampleDataLineChart";
-import {AppErrorBoundary} from "@site/src/components/shared/ErrorBoundary";
-
+import {AppErrorBoundary} from "@site/src/components/Shared/ErrorBoundary";
+import {SampleDataScatterChart} from "@site/src/components/SummaryStatistics/SampleDataScatterChart";
+import styles from './styles.module.css';
 
 export const ChartsDash = () => {
   const [data, setData] = useState([]);
@@ -18,10 +19,13 @@ export const ChartsDash = () => {
     const url = constructCdcUrlString(selectedState);
     const request = new FetchService(url);
     request.getData().then((data) => {
-      console.log('setting')
       setData(data)
     })
-      .catch((err) => console.log('err: ', err));
+      .catch((err) => {
+        console.log(err)
+        alert("There was an error fetching data from the CDC API. Please try again later.");
+        setData([]);
+      });
   },[selectedState])
 
   const StateSelect = ():JSX.Element => {
@@ -29,7 +33,7 @@ export const ChartsDash = () => {
       setSelectedState(event.target.value);
     };
     return (
-      <Box sx={{ minWidth: 120 }}>
+      <Box>
         <FormControl fullWidth>
           <InputLabel id="Select State">State</InputLabel>
           <Select
@@ -49,12 +53,16 @@ export const ChartsDash = () => {
   }
 
   return (
-    <Box component="section" sx={{ p: 2, border: '1px dashed grey' }}>
+    <Box component="section">
       <StateSelect />
-      ChartsDash
-      <AppErrorBoundary>
-        <SampleDataLineChart rawResponseData={data} />
-      </AppErrorBoundary>
+      <Box className={styles.chartContainerBox}>
+        <AppErrorBoundary>
+          <SampleDataLineChart rawResponseData={data} />
+        </AppErrorBoundary>
+        <AppErrorBoundary>
+          <SampleDataScatterChart rawResponseData={data} />
+        </AppErrorBoundary>
+      </Box>
     </Box>
   )
 }

@@ -6,10 +6,11 @@
 /**
  * This puts together the cdc url options.  For this exercise there
  * aren't many options.
+ * Data dictionary: https://dev.socrata.com/foundry/data.cdc.gov/ymmh-divb
  */
 const cdcBaseUrl = 'https://data.cdc.gov/resource';
 const resourceId = 'ymmh-divb';
-const limit = 5;
+const limit = 15;
 
 export const constructCdcUrlString = (state: string) => {
   const now = new Date();
@@ -25,7 +26,6 @@ export type LineData = {
   y: number[],
   type: 'scatter',
   mode: "lines+markers",
-  marker: {color: string},
   name: string
 }
 
@@ -44,7 +44,6 @@ export const convertRawJsonToLineChartData = (rawJson: CdcResponseDataType[]):Li
         y: [],
         type: 'scatter',
         mode: "lines+markers",
-        marker: {color: 'black'},
       };
     }
     const x = (dataPoint.sample_collect_date);
@@ -56,6 +55,42 @@ export const convertRawJsonToLineChartData = (rawJson: CdcResponseDataType[]):Li
   return Object.values(allLineData);
 }
 
+
+export type ScatterData = {
+  x: number[],
+  y: number[],
+  z: number[],
+  type: 'scatter3d',
+  mode: "markers",
+  name: string,
+}
+/**
+ * Turns raw data into scatterchart data
+ */
+export const convertRawJsonToScatterChartData = (rawJson: CdcResponseDataType[]):ScatterData[] => {
+  const allLineData: {[name:string]: ScatterData} = {};
+
+  for (const dataPoint of rawJson) {
+    if (!allLineData[dataPoint.counties_served]) {
+      allLineData[dataPoint.counties_served] = {
+        name: dataPoint.counties_served,
+        x: [],
+        y: [],
+        z: [],
+        type: 'scatter3d',
+        mode: "markers",
+      };
+    }
+    const x = parseFloat(dataPoint.hum_frac_mic_conc);
+    const y = parseFloat(dataPoint.pcr_target_avg_conc);
+    const z = parseFloat(dataPoint.lod_sewage);
+    allLineData[dataPoint.counties_served].x.push(x);
+    allLineData[dataPoint.counties_served].y.push(y);
+    allLineData[dataPoint.counties_served].z.push(z);
+  }
+
+  return Object.values(allLineData);
+}
 
 export type CdcResponseDataType = {
   "record_id": string,
@@ -91,4 +126,6 @@ export type CdcResponseDataType = {
   "rec_eff_spike_matrix":string,
   "rec_eff_spike_conc":string,
   "date_updated":string,
+  hum_frac_mic_conc: string,
+  hum_frac_target_mic: string,
 }
