@@ -6,22 +6,8 @@ import clsx from "clsx";
 import styles from "@site/src/pages/index.module.css";
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
-
-
-const DashBoardHeader = () => {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.smallBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-      </div>
-    </header>
-  )
-}
+import {DashBoardHeader} from "@site/src/components/SummaryStatistics/DashBoardHeader";
+import {ChartsDash} from "@site/src/components/SummaryStatistics/ChartsDash";
 
 const DashBoardPage = (): ReactNode => {
   const {siteConfig} = useDocusaurusContext();
@@ -30,9 +16,7 @@ const DashBoardPage = (): ReactNode => {
     title={`Hello from ${siteConfig.title}`}
     description="Description will go into a meta tag in <head />">
     <DashBoardHeader />
-    <main>
-      asdf
-    </main>
+    <ChartsDash />
   </Layout>
   )
 }
