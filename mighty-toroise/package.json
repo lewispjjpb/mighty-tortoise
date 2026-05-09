@@ -12,7 +12,14 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "format": "prettier --write ."
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.1",
@@ -24,6 +31,7 @@
     "@mui/material": "^9.0.1",
     "clsx": "^2.0.0",
     "plotly.js": "^3.5.1",
+    "prettier": "^3.8.3",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

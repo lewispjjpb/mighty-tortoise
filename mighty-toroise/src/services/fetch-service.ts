@@ -2,7 +2,7 @@
 
 export class FetchService {
   public url: string;
-  constructor(url:string) {
+  constructor(url: string) {
     this.url = url;
   }
 
@@ -13,5 +13,5 @@ export class FetchService {
     } catch (error) {
       console.error('There was a problem with the fetch operation:', error);
     }
-  }
+  };
 }

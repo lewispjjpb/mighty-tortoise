@@ -1,4 +1,4 @@
-import type {ReactNode, ComponentType, ComponentProps} from 'react';
+import type { ReactNode, ComponentType, ComponentProps } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -15,16 +15,12 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Summary Dashboard',
     Svg: require('@site/static/img/virus-svgrepo-com.svg').default,
-    description: (
-      <>
-        View recent statistics on Influenza A
-      </>
-    ),
-    link: '/dashboards/summary-statistics'
+    description: <>View recent statistics on Influenza A</>,
+    link: '/dashboards/summary-statistics',
   },
 ];
 
-function Feature({title, Svg, description, link}: FeatureItem) {
+function Feature({ title, Svg, description, link }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -34,13 +30,13 @@ function Feature({title, Svg, description, link}: FeatureItem) {
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
-      {Boolean(link) && <div className="text--center">
-        <Link className="button button--secondary button--lg"
-         to={link}
-        >
-          View
-        </Link>
-      </div>}
+      {Boolean(link) && (
+        <div className="text--center">
+          <Link className="button button--secondary button--lg" to={link}>
+            View
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

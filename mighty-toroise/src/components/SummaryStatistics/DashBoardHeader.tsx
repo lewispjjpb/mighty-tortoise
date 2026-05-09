@@ -1,8 +1,8 @@
-import { useState, JSX } from 'react'
-import clsx from "clsx";
-import styles from "@site/src/pages/index.module.css";
-import Heading from "@theme/Heading";
-import Link from "@docusaurus/Link";
+import { useState, JSX } from 'react';
+import clsx from 'clsx';
+import styles from '@site/src/pages/index.module.css';
+import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
 
 export const DashBoardHeader = () => {
   return (
@@ -13,5 +13,5 @@ export const DashBoardHeader = () => {
         </Heading>
       </div>
     </header>
-  )
-}
+  );
+};

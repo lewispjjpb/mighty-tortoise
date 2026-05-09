@@ -1,4 +1,5 @@
 # EPA Wastewater Sampling Procedure
+
 **SESD Operating Procedure SESDPROC-306-R3**
 
 ---
@@ -63,15 +64,15 @@ The purpose of this procedure is to document both general and specific procedure
 
 ### 1.2 Scope/Application
 
-This document describes both general and specific methods to be used by field personnel when collecting and handling wastewater samples in the field. 
+This document describes both general and specific methods to be used by field personnel when collecting and handling wastewater samples in the field.
 
-> ⚠️ **Important Note:** On the occasion that SESD field personnel determine that any of the procedures described in this section are inappropriate, inadequate or impractical and that another procedure must be used to obtain a wastewater sample, the variant procedure will be documented in the field log book, along with a description of the circumstances requiring its use. 
+> ⚠️ **Important Note:** On the occasion that SESD field personnel determine that any of the procedures described in this section are inappropriate, inadequate or impractical and that another procedure must be used to obtain a wastewater sample, the variant procedure will be documented in the field log book, along with a description of the circumstances requiring its use.
 
 **Disclaimer:** Mention of trade names or commercial products does not constitute endorsement or recommendation for use.
 
 ### 1.3 Documentation/Verification
 
-This procedure was prepared by persons deemed technically competent by SESD management, based on their knowledge, skills and abilities. The procedure has been tested in practice and reviewed in print by a subject matter expert. 
+This procedure was prepared by persons deemed technically competent by SESD management, based on their knowledge, skills and abilities. The procedure has been tested in practice and reviewed in print by a subject matter expert.
 
 - **Official Repository:** The official copy of this procedure resides on the SESD Local Area Network (LAN)
 - **Document Control:** The Document Control Coordinator is responsible for ensuring the most recent version of the procedure is placed on the SESD LAN and for maintaining records of review conducted prior to its issuance
@@ -79,11 +80,13 @@ This procedure was prepared by persons deemed technically competent by SESD mana
 ### 1.4 References
 
 #### Academic and Industry References
+
 - **California State University – Sacramento.** Operation of Wastewater Treatment Plants - Volumes I, II, III. Sacramento, California.
 - **International Air Transport Authority (IATA).** Dangerous Goods Regulations, Most Recent Version
 - **Metcalf and Eddy, Inc.** 2003. Wastewater Engineering: Treatment, Disposal, and Reuse. 4th Edition, McGraw-Hill Book Co., New York, NY
 
 #### SESD Operating Procedures
+
 - SESD Operating Procedure for Control of Records, **SESDPROC-002**, Most Recent Version
 - SESD Operating Procedure for Equipment Inventory and Management, **SESDPROC-104**, Most Recent Version
 - SESD Operating Procedure for Field Equipment Cleaning and Decontamination, **SESDPROC-205**, Most Recent Version
@@ -100,6 +103,7 @@ This procedure was prepared by persons deemed technically competent by SESD mana
 - SESD Operating Procedure for Wastewater Flow Measurement, **SESDPROC-109**, Most Recent Version
 
 #### Federal Regulations and EPA References
+
 - **Title 40 Code of Federal Regulations (CFR), Part 136.3, Table II**, Most Recent Version
 
 - **US EPA.** 1977. Process Control Manual: Aerobic Biological Treatment Facilities MD-14. EPA 430/09-77-006, Office of Water, Washington, D.C.
@@ -114,6 +118,7 @@ This procedure was prepared by persons deemed technically competent by SESD mana
 ⚠️ **SAFETY FIRST:** Proper safety precautions must be observed when collecting wastewater samples.
 
 **Key Safety Resources:**
+
 - Refer to the **SESD Safety, Health and Environmental Management Program Procedures and Policy Manual**
 - Follow any pertinent site-specific **Health and Safety Plans (HASP)**
 - These guidelines should complement the judgment of an experienced professional
@@ -161,9 +166,11 @@ This procedure was prepared by persons deemed technically competent by SESD mana
 - Samples of waste or highly contaminated media must **not** be placed in the same ice chest as environmental (low contaminant levels) or background/control samples
 
 👥 **Team Coordination:**
+
 - If possible, one member of the field sampling team should take all the notes and photographs, fill out tags, etc., while the other members collect the samples
 
 🛠️ **Equipment Requirements:**
+
 - Field investigators must use **new, verified certified-clean** disposable or non-disposable equipment
 - Equipment must be cleaned according to procedures in **SESD Operating Procedure for Field Equipment Cleaning and Decontamination (SESDPROC-205)**
 - Required for collection of samples for trace metals or organic compound analyses
@@ -172,11 +179,13 @@ This procedure was prepared by persons deemed technically competent by SESD mana
 
 📋 **Compliance Standards:**
 All sample collection and preservation procedures will comply with the requirements outlined in:
+
 - **40 CFR, Part 136.3 (e), Table II**
 - **Figure 3-1** of the US EPA Region 4 Analytical Support Branch Laboratory Operations and Quality Assurance Manual (ASBLOQAM), Most Recent Version
 
 🔬 **Collection Methods:**
 Wastewater samples will typically be collected either by:
+
 - Directly filling the sample container, **OR**
 - Using an automatic sampler or other device
 
@@ -206,6 +215,7 @@ Wastewater samples will typically be collected either by:
 
 🔍 **Equipment Blank Requirements:**
 Equipment blanks should be collected if:
+
 - Equipment is field cleaned and re-used on-site, **OR**
 - Necessary to document that low-level contaminants were not introduced by sampling equipment
 
@@ -230,6 +240,7 @@ Information generated or obtained by SESD personnel will be organized and accoun
 Wastewater sampling studies focus primarily on collecting wastewater samples of the **influent** or **effluent** at domestic and non-domestic facilities.
 
 📊 **Common Applications:**
+
 - **NPDES compliance** sampling
 - **Compliance assistance** activities
 - **Civil and criminal investigations**
@@ -278,6 +289,7 @@ Each sampling location warrants attention commensurate with its complexity. Howe
 In some instances the sampling location specified in the permit, or the location chosen by the permittee, may not be adequate for the collection of a representative wastewater sample.
 
 **Resolution Protocol:**
+
 - The investigator is **not limited** by permit specifications
 - May collect a sample at a more representative location
 - When a conflict exists between the permittee and regulatory agency regarding the most representative sampling location:
@@ -323,6 +335,7 @@ In some instances the sampling location specified in the permit, or the location
 ### 4.1 General
 
 For **NPDES sampling**, two types of sampling techniques are used:
+
 - **Grab samples**
 - **Composite samples**
 
@@ -333,6 +346,7 @@ For **NPDES sampling**, two types of sampling techniques are used:
 ### 4.2 Grab Samples
 
 ⏱️ **Definition:** Grab samples consist of either:
+
 - A **single discrete sample**, OR
 - **Individual samples** collected over a period of time **not to exceed 15 minutes**
 
@@ -343,18 +357,21 @@ For **NPDES sampling**, two types of sampling techniques are used:
 ### 4.3 Composite Samples
 
 ⏰ **Definition:** Composite samples are collected over time, either by:
+
 - **Continuous sampling**, OR
 - **Mixing discrete samples**
 
 🎯 **Objective:** A composite sample represents the **average wastewater characteristics** during the compositing period.
 
 **Available Methods:** Various methods for compositing are available and are based on either:
+
 - **Time proportioning**
 - **Flow proportioning**
 
 #### Selection Criteria
 
 The choice of a **flow proportional** or **time composite** sampling scheme depends on:
+
 - Permit requirements
 - Variability of the wastewater flow or concentration of pollutants
 - Equipment availability
@@ -367,6 +384,7 @@ The choice of a **flow proportional** or **time composite** sampling scheme depe
 **Definition:** A time composite sample consists of **equal volume discrete sample aliquots** collected at **constant time intervals** into one container.
 
 **Collection Methods:** A time composite sample can be collected either:
+
 - **Manually**, OR
 - **With an automatic sampler**
 
@@ -392,10 +410,12 @@ A flow proportional composite sample can be collected using **one of two methods
 ### 5.1 General
 
 🤖 **Applications:** Automatic samplers may be used to collect **composite** or **grab samples** when:
+
 - Several aliquots are to be collected at **frequent intervals**
 - A **continuous sample** is required
 
 **Sampling Modes:**
+
 - **Time composite samples**
 - **Flow proportional samples** (activated and paced by a compatible flow meter)
 - **Manual compositing** using multiple containers and compositing individual sample portions proportional to flow
@@ -437,6 +457,7 @@ A flow proportional composite sample can be collected using **one of two methods
 🏭 **When Facility Automatic Samplers May Be Used:**
 
 Facility automatic samplers should **only** be used if:
+
 1. Field conditions do **not allow** for the installation of EPA sampling equipment, **AND**
 2. The facility sampling equipment **meets all** of the requirements detailed above
 
@@ -449,11 +470,13 @@ Facility automatic samplers should **only** be used if:
 #### Installation Procedures
 
 🔧 **Tubing Requirements:**
+
 - **New tubing** will be used for each sampler installation:
   - **Silastic®** (or equal) in the pump
   - **Teflon®** or **Tygon®** (or equal) in the sample train
 
 **Installation Steps:**
+
 1. Cut the proper length of tubing
 2. Position it in the wastewater stream
 3. Program the sampler
@@ -462,17 +485,20 @@ Facility automatic samplers should **only** be used if:
 #### Programming Requirements
 
 ⏰ **Time Composite Sample:**
+
 - Program sampler to collect **sufficiently sized aliquots** (at least 100-milliliter if using a peristaltic pump)
 - Set frequency that provides a **representative sample**
 - Ensure **enough sample volume** to conduct all required analyses
 
 📊 **Flow Proportional Sample:**
+
 - Program sampler to collect a **minimum of 100 milliliters** for each sample aliquot
 - Set interval **predetermined based on the flow** of the monitored stream
 
 #### Sample Processing
 
 🔄 **End of Compositing Period:**
+
 1. **Properly mix** the collected sample
 2. **Transfer** into the respective containers
 3. **Immediate preservation**, if required
@@ -502,6 +528,7 @@ When an automatic sampler is used for collecting samples for **metals analyses**
 #### Contamination Prevention
 
 ⚠️ **Important:** If the automatic sampler tubing is attached to a **metal conduit pipe**:
+
 - Install the intake tubing **upstream and away** from the conduit to prevent metals contamination
 - **Method:** Clamp the tubing upstream of the conduit using laboratory clamps
 - **Protection:** Wrap the submerged portion of conduit pipe with a protective barrier (e.g., duct tape)
@@ -536,6 +563,7 @@ When an automatic sampler is used for collecting samples for the analyses of **e
 Field investigators should take whatever steps are necessary to **prevent tampering** with EPA equipment.
 
 **Security Measures:**
+
 - A **lock or custody seal** may be placed on the sampler to detect tampering
 - ⚠️ **Limitation:** This does not prevent tampering with the sample collection tubing
 - **Additional protection:** If necessary, seals may be placed on the **sampling pole and tubing line** to further reduce tampering possibilities
@@ -552,6 +580,7 @@ Field investigators should take whatever steps are necessary to **prevent tamper
 The sampler operation should be checked by the **field investigator** or **Field Equipment Center personnel** to ensure proper operation:
 
 **Checklist:**
+
 - ✅ Operation testing (forward, reverse, and automatic) of **at least one purge-pump-purge cycle**
 - ✅ **Checking desiccant** and replacing if necessary
 - ✅ **Checking the 12-volt batteries** to be used with the sampler
@@ -562,6 +591,7 @@ The sampler operation should be checked by the **field investigator** or **Field
 📋 **During Each Field Trip (Prior to Initiating the Automatic Sampler):**
 
 **Mandatory Checks:**
+
 1. **Rinse and purge-pump-purge cycle** shall be checked **at least once**
 2. **Pumping volume** should be checked **at least twice** using a graduated cylinder or other calibrated container
 3. **Flow proportional sampling:** The flow meter that activates the sampler should be checked to ensure proper operation
@@ -571,6 +601,7 @@ The sampler operation should be checked by the **field investigator** or **Field
 🔄 **Upon Returning from Field Trip:**
 
 **Inspection and Maintenance Checklist:**
+
 1. **Structural integrity** examination and repair, if necessary
 2. **Desiccant** checking and replacement if appropriate
 3. **Operation testing** (forward, reverse, automatic, etc.) and required repairs with documentation
@@ -583,13 +614,13 @@ The automatic sampler should be **checked against the manufacturer's specificati
 
 ---
 
-*[Document continues with sections 6-9 following the same enhanced formatting structure...]*
+_[Document continues with sections 6-9 following the same enhanced formatting structure...]_
 chamber); 2) the upflow distribution box following pumping from main plant wet
 well; 3) aerated grit chamber; 4) flume throat; 5) pump wet well when the pump is
 operating; or 6) downstream of preliminary screening. When possible, influent
 samples should be collected upstream from sidestream returns.
 SESD Operating Procedure Page 13 of 24 SESDPROC-306-R
-Wastewater Sampling Wastewater Sampling(306)_AF.R 3
+Wastewater Sampling Wastewater Sampling(306)\_AF.R 3
 
 3.3.2 Effluent
 Effluent samples should be collected at the site specified in the permit, or if no
@@ -604,7 +635,7 @@ and lagoons. Even if the ponds or lagoons have long retention times, composite
 sampling is necessary because of the tendency of ponds and lagoons to have flow
 paths that short circuit which changes the design detention time.
 SESD Operating Procedure Page 14 of 24 SESDPROC-306-R
-Wastewater Sampling Wastewater Sampling(306)_AF.R 3
+Wastewater Sampling Wastewater Sampling(306)\_AF.R 3
 
 4 Sample Types ......................................................................................................................................
 4.1 General ...........................................................................................................................................
@@ -649,7 +680,7 @@ facility’s primary flow device and flow measurement system when their accuracy
 verified. Prior to collecting flow proportional samples, the facility’s flow measuring
 
 SESD Operating Procedure Page 15 of 24 SESDPROC-306-R
-Wastewater Sampling Wastewater Sampling(306)_AF.R 3
+Wastewater Sampling Wastewater Sampling(306)\_AF.R 3
 
 system should be examined for proper installation and accuracy according to SESD
 Operating Procedure for Wastewater Flow Measurement (SESDPROC-109). If the
@@ -660,7 +691,7 @@ primary flow device. If the flow measurement system is acceptable, samples shoul
 collected using the appropriate flow proportioning methods.
 
 SESD Operating Procedure Page 16 of 24 SESDPROC-306-R
-Wastewater Sampling Wastewater Sampling(306)_AF.R 3
+Wastewater Sampling Wastewater Sampling(306)\_AF.R 3
 
 5 Automatic Samplers ...........................................................................................................................
 5.1 General ...........................................................................................................................................
@@ -696,7 +727,7 @@ The minimum inside diameter of the intake line should be 1/4 inch.
 An adequate power source should be available to operate the sampler for the time
 required to complete the project. Facility electrical outlets may be used if available.
 SESD Operating Procedure Page 17 of 24 SESDPROC-306-R
-Wastewater Sampling Wastewater Sampling(306)_AF.R 3
+Wastewater Sampling Wastewater Sampling(306)\_AF.R 3
 
 Facility automatic samplers should only be used if 1) field conditions do not allow for
 the installation of EPA sampling equipment, and 2) the facility sampling equipment
@@ -735,7 +766,7 @@ If the automatic sampler tubing is attached to a metal conduit pipe, the intake
 tubing should be carefully installed upstream and away from the conduit to
 prevent metals contamination. This can be accomplished by clamping the tubing
 SESD Operating Procedure Page 18 of 24 SESDPROC-306-R
-Wastewater Sampling Wastewater Sampling(306)_AF.R 3
+Wastewater Sampling Wastewater Sampling(306)\_AF.R 3
 
 upstream of the conduit using laboratory clamps and wrapping the submerged
 portion of conduit pipe with a protective barrier (e.g., duct tape).
@@ -781,7 +812,7 @@ appropriate. The operation (forward, reverse, automatic, etc.) will be checked a
 required repairs will be made and documented. The sampler will then be cleaned as
 
 SESD Operating Procedure Page 19 of 24 SESDPROC-306-R
-Wastewater Sampling Wastewater Sampling(306)_AF.R 3
+Wastewater Sampling Wastewater Sampling(306)\_AF.R 3
 
 outlined in SESD Operating Procedures for Field Equipment Cleaning and
 Decontamination (SESDPROC-205).
@@ -791,7 +822,7 @@ documented whenever one or more of the sampler functions appear to be operating
 improperly.
 
 SESD Operating Procedure Page 20 of 24 SESDPROC-306-R
-Wastewater Sampling Wastewater Sampling(306)_AF.R 3
+Wastewater Sampling Wastewater Sampling(306)\_AF.R 3
 
 6 Manual Sampling ...............................................................................................................................
 Manual sampling is normally used for collecting grab samples and/or for immediate in-
@@ -823,8 +854,8 @@ that is well mixed then dipping the container in the water or wastewater stream 
 mouth of the container faces upstream. The container should not be overfilled if
 preservatives are present in the container.
 
-SESD Operating Procedure Page 4 of 24 SESDPROC-306-R ______________________________________________________________________________________
-Wastewater Sampling Wastewater Sampling(306)_AF.R
+SESD Operating Procedure Page 4 of 24 SESDPROC-306-R ******************************************\_\_******************************************
+Wastewater Sampling Wastewater Sampling(306)\_AF.R
 7 Special Sample Collection Procedures .............................................................................................
 7.1 Organic Compounds and Metals ...................................................................................................
 Trace organic compounds and metals detection limits are usually in the parts per billion
@@ -871,7 +902,7 @@ into the wastewater using a swooping motion with the mouth facing upstream. Care
 should be taken to ensure that the bottle does not over fill during sample collection.
 
 SESD Operating Procedure Page 22 of 24 SESDPROC-306-R3
-Wastewater Sampling Wastewater Sampling(306)_AF.R 3
+Wastewater Sampling Wastewater Sampling(306)\_AF.R 3
 
 Because losses of oil and grease will occur on sampling equipment, an automatic sampler
 should not be used to collect samples for oil and grease analysis. Individual portions
@@ -918,7 +949,7 @@ after topping off and capping the vial, bubbles are still present, a new vial sh
 obtained and the sample re-collected.
 
 SESD Operating Procedure Page 23 of 24 SESDPROC-306-R3
-Wastewater Sampling Wastewater Sampling(306)_AF.R 3
+Wastewater Sampling Wastewater Sampling(306)\_AF.R 3
 
 8 Special Process Control Samples and Tests .....................................................................................
 During diagnostic evaluations, process control tests may be conducted to evaluate and
@@ -939,7 +970,7 @@ Additional references are available that provide a more comprehensive evaluation
 methods used to conduct a diagnostic evaluation.
 
 SESD Operating Procedure Page 24 of 24 SESDPROC-306-R3
-Wastewater Sampling Wastewater Sampling(306)_AF.R 3
+Wastewater Sampling Wastewater Sampling(306)\_AF.R 3
 
 9 Supplementary Data Collection ........................................................................................................
 While conducting wastewater sampling, the following information will also be obtained
