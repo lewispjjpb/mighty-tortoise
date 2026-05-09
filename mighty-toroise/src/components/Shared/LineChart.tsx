@@ -15,6 +15,10 @@ export const LineChart = ({data, layout}: LineChartDataType) => {
     <Plot
       data={data}
       layout={ layout }
+      useResizeHandler={true}
+      style={{width: "100%", height: "100%"}}
+      config={{responsive: true}}
+
     />
 
     )

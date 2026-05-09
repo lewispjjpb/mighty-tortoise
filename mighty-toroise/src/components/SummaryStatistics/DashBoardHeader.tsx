@@ -11,9 +11,6 @@ export const DashBoardHeader = () => {
         <Heading as="h1" className="hero__subtitle">
           Influenza A at a Glance
         </Heading>
-        <Link className="button button--secondary button--lg" to="/">
-          Return Home
-        </Link>
       </div>
     </header>
   )

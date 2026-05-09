@@ -26,7 +26,7 @@ let layout: Partial<Layout> = {
     title: {
       text: 'y Axis',
     }
-  }
+  },
 };
 
 export const SampleDataScatterChart = ({rawResponseData}: SampleDataScatterChartProps) => {

@@ -22,7 +22,7 @@ export const ChartsDash = () => {
       setData(data)
     })
       .catch((err) => {
-        console.log(err)
+        console.error(err)
         alert("There was an error fetching data from the CDC API. Please try again later.");
         setData([]);
       });
@@ -33,8 +33,7 @@ export const ChartsDash = () => {
       setSelectedState(event.target.value);
     };
     return (
-      <Box>
-        <FormControl fullWidth>
+        <FormControl>
           <InputLabel id="Select State">State</InputLabel>
           <Select
             labelId="select-state-label"
@@ -42,18 +41,19 @@ export const ChartsDash = () => {
             label="State"
             onChange={handleChange}
             value={selectedState}
+            size="small"
+            margin="dense"
           >
             { Object.entries(STATE_MAP).map(([key, value]) => (
               <MenuItem key={value} value={value}>{key}</MenuItem>
             ))}
           </Select>
         </FormControl>
-      </Box>
     );
   }
 
   return (
-    <Box component="section">
+    <Box>
       <StateSelect />
       <Box className={styles.chartContainerBox}>
         <AppErrorBoundary>
