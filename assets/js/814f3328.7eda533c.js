@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmighty_toroise=self.webpackChunkmighty_toroise||[]).push([["833"],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[]}')}}]);
