@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmighty_toroise=self.webpackChunkmighty_toroise||[]).push([["600"],{4966(t){t.exports=JSON.parse('{"metadata":{"permalink":"/mighty-tortoise/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":0,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
