@@ -16,9 +16,7 @@ export const constructCdcUrlString = (state: string) => {
   const sixMonthsAgo: string = new Date(
     now.setMonth(now.getMonth() - 6)
   ).toISOString();
-  return `${cdcBaseUrl}/${resourceId}.json?$where=state_territory='${state}'
-  AND sample_collect_date > '${sixMonthsAgo}'&$order=sample_collect_date DESC&$limit=${limit}
-  `;
+  return `${cdcBaseUrl}/${resourceId}.json?$where=state_territory='${state}' AND sample_collect_date > '${sixMonthsAgo}'&$order=sample_collect_date DESC&$limit=${limit}`;
 };
 
 export type LineData = {

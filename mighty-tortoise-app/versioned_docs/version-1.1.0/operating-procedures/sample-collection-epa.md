@@ -854,7 +854,7 @@ that is well mixed then dipping the container in the water or wastewater stream 
 mouth of the container faces upstream. The container should not be overfilled if
 preservatives are present in the container.
 
-SESD Operating Procedure Page 4 of 24 SESDPROC-306-R ********\*\*\*\*********\*\*********\*\*\*\*********\_\_********\*\*\*\*********\*\*********\*\*\*\*********
+SESD Operating Procedure Page 4 of 24 SESDPROC-306-R **\*\*\*\***\*\*\*\***\*\*\*\***\*\***\*\*\*\***\*\*\*\***\*\*\*\***\_\_**\*\*\*\***\*\*\*\***\*\*\*\***\*\***\*\*\*\***\*\*\*\***\*\*\*\***
 Wastewater Sampling Wastewater Sampling(306)\_AF.R
 7 Special Sample Collection Procedures .............................................................................................
 7.1 Organic Compounds and Metals ...................................................................................................
