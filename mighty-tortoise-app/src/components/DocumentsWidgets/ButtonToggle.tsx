@@ -7,13 +7,15 @@ type ButtonToggleProps = {
 
 export const ButtonToggle = ({ children }: ButtonToggleProps) => {
   return (
-    <motion.button
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
-      className="button button--primary"
-      style={{ cursor: 'pointer' }}
-    >
-      {children}
-    </motion.button>
+    <div className="flex justify-center">
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 4 }}
+        className="button button--primary"
+        style={{ cursor: 'pointer' }}
+      >
+        {children}
+      </motion.button>
+    </div>
   );
 };

@@ -11,12 +11,19 @@ import { SampleDataLineChart } from '@site/src/components/SummaryStatistics/Samp
 import { AppErrorBoundary } from '@site/src/components/Shared/ErrorBoundary';
 import { SampleDataScatterChart } from '@site/src/components/SummaryStatistics/SampleDataScatterChart';
 import styles from './styles.module.css';
+import BrowserOnly from '@docusaurus/BrowserOnly';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+
 
 export const ChartsDash = () => {
   const [data, setData] = useState([]);
   const [selectedState, setSelectedState] = useState('ma');
 
   useEffect(() => {
+    if (!ExecutionEnvironment.canUseDOM) {
+      return;
+    }
+
     const url = constructCdcUrlString(selectedState);
     const request = new FetchService(url);
     request
@@ -64,14 +71,14 @@ export const ChartsDash = () => {
   return (
     <Box className="workspace-container">
       <StateSelect />
-      <Box className={styles.chartContainerBox}>
-        <AppErrorBoundary>
-          <SampleDataLineChart rawResponseData={data} />
-        </AppErrorBoundary>
-        <AppErrorBoundary>
-          <SampleDataScatterChart rawResponseData={data} />
-        </AppErrorBoundary>
-      </Box>
+        <Box className={styles.chartContainerBox}>
+          <AppErrorBoundary>
+            <SampleDataLineChart rawResponseData={data}/>
+          </AppErrorBoundary>
+          <AppErrorBoundary>
+            <SampleDataScatterChart rawResponseData={data}/>
+          </AppErrorBoundary>
+        </Box>
     </Box>
   );
 };
