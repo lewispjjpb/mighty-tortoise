@@ -87,12 +87,12 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
-        // {
-        //   href: 'https://github.com/facebook/docusaurus',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
+        // { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          href: 'https://github.com/lewispjjpb/mighty-tortoise',
+          label: 'Visit this demo\'s GitHub repo',
+          position: 'right',
+        },
       ],
     },
     footer: {

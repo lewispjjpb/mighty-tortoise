@@ -18,6 +18,12 @@ const FeatureList: FeatureItem[] = [
     description: <>View recent statistics on Influenza A</>,
     link: '/dashboards/summary-statistics',
   },
+  {
+    title: 'Documentation and Requirements',
+    Svg: require('@site/static/img/docs-svgrepo-com.svg').default,
+    description: <>Check out the documentation and requirements for sample collection</>,
+    link: '/docs/category/operating-references',
+  },
 ];
 
 function Feature({ title, Svg, description, link }: FeatureItem) {
