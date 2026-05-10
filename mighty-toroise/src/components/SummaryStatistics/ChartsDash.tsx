@@ -38,8 +38,8 @@ export const ChartsDash = () => {
       setSelectedState(event.target.value);
     };
     return (
-      <FormControl>
-        <InputLabel id="Select State">State</InputLabel>
+      <FormControl size="small">
+        <InputLabel id="Select State" shrink>State</InputLabel>
         <Select
           labelId="select-state-label"
           id="state-select"
@@ -60,7 +60,7 @@ export const ChartsDash = () => {
   };
 
   return (
-    <Box>
+    <Box className="workspace-container">
       <StateSelect />
       <Box className={styles.chartContainerBox}>
         <AppErrorBoundary>
