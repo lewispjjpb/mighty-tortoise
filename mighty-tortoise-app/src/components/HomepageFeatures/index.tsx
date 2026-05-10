@@ -21,14 +21,14 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Documentation and Requirements',
     Svg: require('@site/static/img/docs-svgrepo-com.svg').default,
-    description: <>Check out the documentation and requirements for sample collection</>,
+    description: <>Documentation and training for sample collection</>,
     link: '/docs/category/operating-references',
   },
 ];
 
 function Feature({ title, Svg, description, link }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--6')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>

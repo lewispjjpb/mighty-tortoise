@@ -1,5 +1,6 @@
 ---
 title: Here is a test, with metadata
+slug: test
 ---
 
 #Here is a test

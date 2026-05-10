@@ -1,3 +1,7 @@
+---
+slug: sample-collection-epa
+---
+
 # EPA Wastewater Sampling Procedure
 
 **SESD Operating Procedure SESDPROC-306-R3**
