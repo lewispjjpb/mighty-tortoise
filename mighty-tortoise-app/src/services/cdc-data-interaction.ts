@@ -27,7 +27,7 @@ export type LineData = {
   type: 'scatter';
   mode: 'lines+markers';
   name: string;
-  line: {shape: 'spline', smoothing: number};
+  line: { shape: 'spline'; smoothing: number };
 };
 
 /**
@@ -47,7 +47,7 @@ export const convertRawJsonToLineChartData = (
         y: [],
         type: 'scatter',
         mode: 'lines+markers',
-        line: {shape: 'spline', smoothing: .8}
+        line: { shape: 'spline', smoothing: 0.8 },
       };
     }
     const x = dataPoint.sample_collect_date;

@@ -30,6 +30,7 @@
     "@mdx-js/react": "^3.0.0",
     "@mui/material": "^9.0.1",
     "clsx": "^2.0.0",
+    "motion": "^12.38.0",
     "plotly.js": "^3.5.1",
     "prettier": "^3.8.3",
     "prism-react-renderer": "^2.3.0",

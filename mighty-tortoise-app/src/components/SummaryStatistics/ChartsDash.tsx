@@ -39,7 +39,9 @@ export const ChartsDash = () => {
     };
     return (
       <FormControl size="small">
-        <InputLabel id="Select State" shrink>State</InputLabel>
+        <InputLabel id="Select State" shrink>
+          State
+        </InputLabel>
         <Select
           labelId="select-state-label"
           id="state-select"

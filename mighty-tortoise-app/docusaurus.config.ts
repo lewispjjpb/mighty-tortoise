@@ -97,16 +97,16 @@ const config: Config = {
         // { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/lewispjjpb/mighty-tortoise',
-          label: 'Visit this demo\'s GitHub repo',
+          label: "Visit this demo's GitHub repo",
           position: 'right',
         },
         {
           type: 'docsVersionDropdown',
           versions: {
-          current: {label: 'Draft'},
-          '1.1.0': {label: 'Version 1.1.0'},
-          '1.0.0': {label: 'Version 1.0.0'},
-        },
+            current: { label: 'Draft' },
+            '1.1.0': { label: 'Version 1.1.0' },
+            '1.0.0': { label: 'Version 1.0.0' },
+          },
         },
       ],
     },
