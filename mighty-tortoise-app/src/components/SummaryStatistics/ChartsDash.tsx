@@ -1,19 +1,14 @@
 import { useState, useEffect, JSX } from 'react';
 import { constructCdcUrlString } from '@site/src/services/cdc-data-interaction';
 import { FetchService } from '@site/src/services/fetch-service';
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
+import { Box, InputLabel, MenuItem, FormControl } from '@mui/material';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { STATE_MAP } from '@site/src/utils/app-constants';
 import { SampleDataLineChart } from '@site/src/components/SummaryStatistics/SampleDataLineChart';
 import { AppErrorBoundary } from '@site/src/components/Shared/ErrorBoundary';
 import { SampleDataScatterChart } from '@site/src/components/SummaryStatistics/SampleDataScatterChart';
 import styles from './styles.module.css';
-import BrowserOnly from '@docusaurus/BrowserOnly';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
-
 
 export const ChartsDash = () => {
   const [data, setData] = useState([]);
@@ -33,9 +28,6 @@ export const ChartsDash = () => {
       })
       .catch((err) => {
         console.error(err);
-        alert(
-          'There was an error fetching data from the CDC API. Please try again later.'
-        );
         setData([]);
       });
   }, [selectedState]);
@@ -71,14 +63,14 @@ export const ChartsDash = () => {
   return (
     <Box className="workspace-container">
       <StateSelect />
-        <Box className={styles.chartContainerBox}>
-          <AppErrorBoundary>
-            <SampleDataLineChart rawResponseData={data}/>
-          </AppErrorBoundary>
-          <AppErrorBoundary>
-            <SampleDataScatterChart rawResponseData={data}/>
-          </AppErrorBoundary>
-        </Box>
+      <Box className={styles.chartContainerBox}>
+        <AppErrorBoundary>
+          <SampleDataLineChart rawResponseData={data} />
+        </AppErrorBoundary>
+        <AppErrorBoundary>
+          <SampleDataScatterChart rawResponseData={data} />
+        </AppErrorBoundary>
+      </Box>
     </Box>
   );
 };
