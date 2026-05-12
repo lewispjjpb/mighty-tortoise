@@ -9,7 +9,7 @@
  */
 const cdcBaseUrl = 'https://data.cdc.gov/resource';
 const resourceId = 'ymmh-divb';
-const limit = 20;
+const limit = 500;
 
 export const constructCdcUrlString = (state: string) => {
   const now = new Date();

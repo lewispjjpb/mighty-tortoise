@@ -18,14 +18,14 @@ const config: Config = {
   url: 'https://dash-epi.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/mighty-tortoise/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'pjjpb', // Usually your GitHub org/user name.
+  organizationName: 'lewispjjpb', // Usually your GitHub org/user name.
   projectName: 'mighty-tortoise', // Usually your repo name.
-
   onBrokenLinks: 'throw',
+  trailingSlash: false,
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -34,7 +34,24 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  plugins: [
+    () => ({
+      name: 'inject-docsbot',
+      injectHtmlTags() {
+        return {
+          postBodyTags: [
+            {
+              tagName: 'script',
+              innerHTML: `
+                window.DocsBotAI=window.DocsBotAI||{},DocsBotAI.init=function(c){return new Promise((e,o)=>{var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://widget.docsbot.ai/chat.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n),t.addEventListener("load",()=>{Promise.all([new Promise((e,o)=>{window.DocsBotAI.mount(Object.assign({},c)).then(e).catch(o)}),(function n(t){return new Promise(e=>{if(document.querySelector(t))return e(document.querySelector(t));var o=new MutationObserver(n=>{if(document.querySelector(t))return e(document.querySelector(t)),o.disconnect()});o.observe(document.body,{childList:!0,subtree:!0})})})("#docsbotai-root")]).then(()=>e()).catch(o)}),t.addEventListener("error",e=>{o(e.message)})})};
+                DocsBotAI.init({ id: "2MoUbK6wIOmmceij8jdr/f4PZp4ZjbMR2NAl0gsA0" });
+              `,
+            },
+          ],
+        };
+      },
+    }),
+  ],
   presets: [
     [
       'classic',
@@ -46,21 +63,6 @@ const config: Config = {
           // editUrl:
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   feedOptions: {
-        //     type: ['rss', 'atom'],
-        //     xslt: true,
-        //   },
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   // editUrl:
-        //   //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        //   // Useful options to enforce blogging best practices
-        //   onInlineTags: 'warn',
-        //   onInlineAuthors: 'warn',
-        //   onUntruncatedBlogPosts: 'warn',
-        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -112,47 +114,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      // links: [
-      //   {
-      //     title: 'Docs',
-      //     items: [
-      //       {
-      //         label: 'Tutorial',
-      //         to: '/docs/intro',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Community',
-      //     items: [
-      //       {
-      //         label: 'Stack Overflow',
-      //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //       },
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discordapp.com/invite/docusaurus',
-      //       },
-      //       {
-      //         label: 'X',
-      //         href: 'https://x.com/docusaurus',
-      //       },
-      //     ],
-      //   },
-      //   // {
-      //   //   title: 'More',
-      //   //   items: [
-      //   //     {
-      //   //       label: 'Blog',
-      //   //       to: '/blog',
-      //   //     },
-      //   //     {
-      //   //       label: 'GitHub',
-      //   //       href: 'https://github.com/facebook/docusaurus',
-      //   //     },
-      //   //   ],
-      //   // },
-      // ],
+
       copyright: `Pretend Copyright © ${new Date().getFullYear()} Mighty Tortoise, Inc. Built with Docusaurus.`,
     },
     prism: {
