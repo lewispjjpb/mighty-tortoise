@@ -1,7 +1,13 @@
 import { useState, useEffect, JSX } from 'react';
 import { constructCdcUrlString } from '@site/src/services/cdc-data-interaction';
 import { FetchService } from '@site/src/services/fetch-service';
-import { Box, InputLabel, MenuItem, FormControl } from '@mui/material';
+import {
+  Box,
+  InputLabel,
+  MenuItem,
+  FormControl,
+  CircularProgress,
+} from '@mui/material';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import { STATE_MAP } from '@site/src/utils/app-constants';
 import { SampleDataLineChart } from '@site/src/components/SummaryStatistics/SampleDataLineChart';
@@ -13,6 +19,7 @@ import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 export const ChartsDash = () => {
   const [data, setData] = useState([]);
   const [selectedState, setSelectedState] = useState('ma');
+  const [dataLoading, setDataLoading] = useState(false);
 
   useEffect(() => {
     if (!ExecutionEnvironment.canUseDOM) {
@@ -21,6 +28,7 @@ export const ChartsDash = () => {
 
     const url = constructCdcUrlString(selectedState);
     const request = new FetchService(url);
+    setDataLoading(true);
     request
       .getData()
       .then((data) => {
@@ -29,6 +37,9 @@ export const ChartsDash = () => {
       .catch((err) => {
         console.error(err);
         setData([]);
+      })
+      .finally(() => {
+        setDataLoading(false);
       });
   }, [selectedState]);
 
@@ -37,7 +48,7 @@ export const ChartsDash = () => {
       setSelectedState(event.target.value);
     };
     return (
-      <FormControl size="small">
+      <FormControl size="small" sx={{ m: 1, minWidth: 120 }}>
         <InputLabel id="Select State" shrink>
           State
         </InputLabel>
@@ -65,10 +76,18 @@ export const ChartsDash = () => {
       <StateSelect />
       <Box className={styles.chartContainerBox}>
         <AppErrorBoundary>
-          <SampleDataLineChart rawResponseData={data} />
+          {dataLoading ? (
+            <CircularProgress />
+          ) : (
+            <SampleDataLineChart rawResponseData={data} />
+          )}
         </AppErrorBoundary>
         <AppErrorBoundary>
-          <SampleDataScatterChart rawResponseData={data} />
+          {dataLoading ? (
+            <CircularProgress />
+          ) : (
+            <SampleDataScatterChart rawResponseData={data} />
+          )}
         </AppErrorBoundary>
       </Box>
     </Box>
