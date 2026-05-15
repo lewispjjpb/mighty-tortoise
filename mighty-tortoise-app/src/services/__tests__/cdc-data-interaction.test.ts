@@ -24,7 +24,7 @@ describe('CDC Data Interaction Functions', () => {
       expect(result).toContain('https://data.cdc.gov/resource/ymmh-divb.json');
       expect(result).toContain("state_territory='ca'");
       expect(result).toContain('$order=sample_collect_date DESC');
-      expect(result).toContain('$limit=20');
+      expect(result).toContain('$limit=500');
     });
 
     it('should handle different state codes', () => {
